@@ -142,16 +142,18 @@ const ProfileCreation = ({
           Or Please RETURN
         </div>
       </div>
+
       <div
         onClick={handleLoginStep2}
-        className="absolute bg-gray-100 hover-bg-gray-200 py-1 px-1 rounded-lg text-gray-500 top-10 right-5 cursor-pointer flex justify-center items-center font-bold  "
+        className="absolute bg-gray-100 hover-bg-gray-200 py-1 px-1 rounded-lg text-gray-500 top-10 right-5 cursor-pointer  justify-center items-center font-bold hidden md:flex "
       >
         <PiFastForwardBold />
         <div>Skip</div>
       </div>
+
       <MdKeyboardArrowLeft
         size={30}
-        className="mt-10 cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-lg absolute sm:top-3 top-24 left-5 sm:left-16 lg:left-32"
+        className="mt-10 cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-lg absolute sm:top-3 top-24 left-5 sm:left-16 lg:left-32 hidden md:flex "
         onClick={handleLoginStep0}
       />
     </section>
