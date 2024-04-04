@@ -1,3 +1,4 @@
+import HomePage from "@/components/HomePage";
 import LeftSide from "@/components/LeftSide";
 import ProfilePage from "@/components/ProfilePage";
 import RightSide from "@/components/RightSide";
@@ -19,17 +20,13 @@ export default function Home() {
         </section> */}
         {/* <ProfilePage /> */}
 
-        <SelectPage />
+        {/* <SelectPage /> */}
+
+        <HomePage />
 
 
 
-        <Image
-          src={"https://img.icons8.com/3d-fluency/94/christmas-star.png"}
-          alt="hero"
-          height={50}
-          width={50}
-          className=" inset-0 z-10 top-8 left-16 hover:animate-spin cursor-pointer  object-contain opacity-80 brightness-125 hidden lg:block absolute "
-        />
+       
       </main>
     </>
   );

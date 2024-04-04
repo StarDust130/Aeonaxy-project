@@ -16,7 +16,7 @@ const SelectPage = () => {
     setIsCheckedArray(newIsCheckedArray); // Update the state
   };
   return (
-    <section className="w-screen flex flex-col justify-center items-center h-screen mt-80 sm:mt-20 md:mt-0  my-96  ">
+    <section className="w-screen flex flex-col justify-center items-center h-screen mt-40 sm:mt-20 md:mt-0  my-96  ">
       <div className="flex   flex-col justify-center items-center text-center ">
         <h1 className="md:text-4xl text-2xl mt-20  font-bold">
           What brings you to Aeonaxy Project 🐼?
@@ -50,7 +50,7 @@ const SelectPage = () => {
           title="Finish"
           className={`${
             !isCheckedArray.some((isChecked) => isChecked) // Check if any card is checked
-              ? "bg-pink-200 cursor-not-allowed hover:bg-pink-200 text-bold border-none outline-none hover:text-white"
+              ? "bg-pink-300 cursor-not-allowed hover:bg-pink-300 text-bold border-none outline-none hover:text-white"
               : ""
           }`}
         />
@@ -61,7 +61,7 @@ const SelectPage = () => {
 
       <MdKeyboardArrowLeft
         size={30}
-        className="mt-10 cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-lg absolute top-3 left-32"
+        className="mt-10 cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-lg absolute sm:top-3 top-24 left-5 sm:left-16 lg:left-32"
       />
     </section>
   );
