@@ -4,8 +4,17 @@ import CheckboxCard from "./CheckBox";
 import data from "../components/index";
 import { useState } from "react";
 import { MdKeyboardArrowLeft } from "react-icons/md";
+import { PiFastForwardBold } from "react-icons/pi";
 
-const SelectPage = () => {
+interface SelectPageProps {
+  handleLoginStep3: () => void;
+  handleLoginStep1: () => void;
+}
+
+const SelectPage = ({
+  handleLoginStep3,
+  handleLoginStep1,
+}: SelectPageProps) => {
   const [isCheckedArray, setIsCheckedArray] = useState<boolean[]>(
     Array(data.length).fill(false)
   ); // Initialize array of isChecked states
@@ -47,6 +56,8 @@ const SelectPage = () => {
           Anything else? You can select multiple
         </h1>
         <Button
+          disabled={!isCheckedArray.some((isChecked) => isChecked)}
+          onClick={handleLoginStep3}
           title="Finish"
           className={`${
             !isCheckedArray.some((isChecked) => isChecked) // Check if any card is checked
@@ -62,7 +73,15 @@ const SelectPage = () => {
       <MdKeyboardArrowLeft
         size={30}
         className="mt-10 cursor-pointer bg-gray-50 hover:bg-gray-100 rounded-lg absolute sm:top-3 top-24 left-5 sm:left-16 lg:left-32"
+        onClick={handleLoginStep1}
       />
+      <div
+        onClick={handleLoginStep3}
+        className="absolute bg-gray-100 hover-bg-gray-200 py-1 px-1 rounded-lg text-gray-500 top-10 right-5 cursor-pointer flex justify-center items-center font-bold  "
+      >
+        <PiFastForwardBold />
+        <div>Skip</div>
+      </div>
     </section>
   );
 };
