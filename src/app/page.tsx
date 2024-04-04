@@ -1,23 +1,27 @@
 import LeftSide from "@/components/LeftSide";
 import ProfilePage from "@/components/ProfilePage";
 import RightSide from "@/components/RightSide";
+import SelectPage from "@/components/SelectPage";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <main className="h-screen w-full flex">
+      <main className="h-screen w-full ">
         {/* <section className="bg-white">
-        <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
-          {/*Left Side  😆 */}
-        {/* <LeftSide /> */}
+          <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
+           
+            <LeftSide />
 
-        {/* RightSide 😁 */}
-        {/* <RightSide /> */}
+           
+            <RightSide />
+          </div>
+        </section> */}
+        {/* <ProfilePage /> */}
 
-        {/* </div> */}
-        {/* </section> */}
-        <ProfilePage />
+        <SelectPage />
+
+
 
         <Image
           src={"https://img.icons8.com/3d-fluency/94/christmas-star.png"}
