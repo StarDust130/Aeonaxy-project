@@ -27,6 +27,7 @@ Welcome to the **Multi Step Login Form** project brought to you by **Aeonaxy**! 
 - **Attention to Detail:** 🧐🔍 Pay attention to small details that can make a big difference in user experience.
 - **Collaboration:** 🤝👩‍💻 Share your progress and seek feedback from peers for improvement.
 
+<hr />
 
 ### Remember, in coding and in life, persistence and creativity can lead to extraordinary outcomes. Keep pushing the boundaries of what you can achieve. 🌟💪
 
